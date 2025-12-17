@@ -92,6 +92,10 @@ export default {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -99,6 +103,7 @@ export default {
         float: "float 3s ease-in-out infinite",
         "slide-up": "slide-up 0.8s ease-out forwards",
         "fade-in": "fade-in 0.8s ease-out forwards",
+        "scroll-left": "scroll-left 30s linear infinite",
       },
     },
   },

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Github, Eye, Folder, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const projects = [
   {
@@ -31,17 +30,7 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB"],
     liveUrl: "#",
     githubUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A creative personal portfolio showcasing projects, skills, and professional experience with modern animations.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    tags: ["React", "TypeScript", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
+    featured: true,
   },
 ];
 
@@ -159,16 +148,6 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className={`text-center mt-12 transition-all duration-700 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <Button
-            variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground btn-glow px-8 py-6 rounded-full font-semibold group"
-          >
-            <Folder className="mr-2" size={18} />
-            View All Projects
-            <ExternalLink className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
-          </Button>
-        </div>
       </div>
     </section>
   );

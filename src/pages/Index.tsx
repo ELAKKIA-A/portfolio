@@ -2,8 +2,10 @@ import Navbar from "@/components/portfolio/Navbar";
 import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
 import Skills from "@/components/portfolio/Skills";
-import Services from "@/components/portfolio/Services";
+import TechSlider from "@/components/portfolio/TechSlider";
+import Experience from "@/components/portfolio/Experience";
 import Portfolio from "@/components/portfolio/Portfolio";
+import Certificate from "@/components/portfolio/Certificate";
 import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
 
@@ -14,8 +16,10 @@ const Index = () => {
       <Hero />
       <About />
       <Skills />
-      <Services />
+      <TechSlider />
+      <Experience />
       <Portfolio />
+      <Certificate />
       <Contact />
       <Footer />
     </div>
