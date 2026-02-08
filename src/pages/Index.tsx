@@ -23,8 +23,9 @@ const Index = () => {
         <Projects />
         <Experience />
         <Education />
-        <Certificates />
         <CTA />
+        <Certificates />
+        
         <Contact />
       </main>
       <Footer />

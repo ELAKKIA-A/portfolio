@@ -145,11 +145,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...springTransition, delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-6 sm:mb-10 "
+            className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-6 sm:mb-10 justify-center md:justify-start"
           >
             <a
               href="#contact"
-              className="gradient-button w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 flex items-center justify-center gap-3 font-bold text-base sm:text-lg group relative overflow-hidden"
+              className="gradient-button w-full sm:w-auto px-4 sm:px-4 py-3 sm:py-3 flex items-center justify-center gap-3 font-bold text-base sm:text-sm group relative overflow-hidden"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -160,7 +160,7 @@ const Hero = () => {
             </a>
             <a
               href="/certificates/resume.pdf"
-              className="outline-button w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 flex items-center justify-center gap-3 text-base sm:text-lg group"
+              className="outline-button w-full sm:w-auto px-4 sm:px-4 py-3 sm:py-3 flex items-center justify-center gap-3 text-base sm:text-sm group"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -205,7 +205,7 @@ const Hero = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1, delay: 1.5 }}
-  className="absolute bottom-8 sm:bottom-10 left-1/2 -translate-x-1/2 z-30 cursor-pointer"
+  className="absolute bottom-8 sm:bottom-10 left-1/2 -translate-x-1/2 z-30 cursor-pointer hidden md:flex"
   onClick={() => {
     document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
   }}

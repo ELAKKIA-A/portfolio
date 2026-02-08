@@ -10,7 +10,7 @@ const educationData = [
     institution: "Rani Anna Government College for Women",
     location: "Tirunelveli",
     year: "Graduated in 2022",
-    score: "CGPA: 8.74",
+  
     icon: GraduationCap,
   },
   {
@@ -19,16 +19,16 @@ const educationData = [
     institution: "Sokkalal Higher Secondary School",
     location: "Mukkudal, Tirunelveli",
     year: "Graduated in 2019",
-    score: "Percentage: 66.4%",
+   
     icon: Award,
   },
   {
     level: "SSLC",
-    degree: "",
+    degree: "General",
     institution: "Sokkalal Higher Secondary School",
     location: "Mukkudal, Tirunelveli",
     year: "Graduated in 2017",
-    score: "Percentage: 79%",
+   
     icon: BookOpen,
   },
 ];
@@ -55,7 +55,7 @@ const Education = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12 sm:mb-16 md:mb-20"
+            className="text-center mb-6 sm:mb-8 md:mb-8"
           >
             <span className="skill-badge mb-4 inline-block">Academic Background</span>
             <h2 className="section-title">
@@ -75,7 +75,7 @@ const Education = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ ...springTransition, delay: index * 0.15 }}
-                className="glass-card-hover p-6 sm:p-8 relative overflow-hidden group text-center"
+                className="glass-card-hover p-5 sm:p-6 relative overflow-hidden group text-center"
               >
                 {/* Top decorative line */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary" />
@@ -112,8 +112,8 @@ const Education = () => {
                 
                 {/* Year & Score */}
                 <div className="pt-4 border-t border-border">
-                  <p className="text-sm text-muted-foreground mb-1">{edu.year}</p>
-                  <p className="text-base font-bold text-primary">{edu.score}</p>
+                  <p className="text-base font-bold text-primary">{edu.year}</p>
+                  {/* <p className="text-base font-bold text-primary">{edu.score}</p> */}
                 </div>
               </motion.div>
             ))}

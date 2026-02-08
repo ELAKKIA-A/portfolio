@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { BookOpen, TrendingUp, Award, Sparkles, Rocket, Target, Zap, ArrowRight } from 'lucide-react';
+import { Target, Zap, ArrowRight, Unplug } from 'lucide-react';
 
 
 
@@ -16,7 +16,7 @@ const CTA = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-16 sm:py-20 md:py-28 relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-28 relative overflow-hidden bg-gray-200">
       {/* Premium gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
       
@@ -60,7 +60,7 @@ const CTA = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               >
-                <Rocket size={48} />
+                <Unplug size={48} />
               </motion.div>
               <motion.div 
                 className="absolute bottom-8 left-8 text-primary/20"
@@ -109,7 +109,7 @@ const CTA = () => {
           >
             <a
               href="#contact"
-              className="gradient-button w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 flex items-center justify-center gap-3 font-bold text-base sm:text-lg group relative overflow-hidden"
+              className="gradient-button w-full sm:w-auto px-4 sm:px-4 py-3 sm:py-3 flex items-center justify-center gap-3 font-bold text-base sm:text-sm group relative overflow-hidden"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -121,7 +121,7 @@ const CTA = () => {
             
                   <a
                     href="#contact"
-                    className="outline-button w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg"
+                    className="outline-button w-full sm:w-auto px-4 sm:px-4 py-3 sm:py-3 text-base sm:text-sm"
                     onClick={(e) => {
                       e.preventDefault();
                       document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });

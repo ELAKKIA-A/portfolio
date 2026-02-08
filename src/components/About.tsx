@@ -59,7 +59,7 @@ const About = () => {
               <div className="flex flex-col sm:flex-row gap-4 ">
               <a
               href="#contact"
-              className="gradient-button w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 flex items-center justify-center gap-3 font-bold text-base sm:text-lg group relative overflow-hidden"
+              className="gradient-button w-full sm:w-auto px-4 sm:px-4 py-3 sm:py-3 flex items-center justify-center gap-3 font-bold text-base sm:text-sm group relative overflow-hidden"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
